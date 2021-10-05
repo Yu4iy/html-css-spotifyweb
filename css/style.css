@@ -32,29 +32,74 @@ body {
 .px-20 {
 	padding: 0 20px;
 }
-
-
+.mt-25 {
+	margin-top: 25px;
+}
+.mb-10 {
+	margin-bottom: 10px;
+}
 
 
 /* SIDE COLON */
 .side-colon {
-	background-color: indianred;
+	background-color: rgb(0, 0, 0);
 	height: calc(100% - 60px);
 	flex-grow: 1;
+	padding: 5px 10px;
+	max-width: 15%;
+}
+
+.block-top__logo {
+	max-width: 60%; 
+}
+
+.top-item {
+	display: flex;
+	align-items: center;
+	line-height: 30px;
+}
+.top-item__img {
+	filter: opacity(60%);
+	width: 20px;
+}
+.top-item__txt {
+	font-weight: 600;
+}
+.block-center {
+	overflow: auto;
+	max-height: 420px;
+	
+}
+.block-center__title {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+}
+.block-center__item {
+	display: flex;
+	align-items: center;
+	line-height: 35px;
+}
+.fa-plus-square {
+	font-size: 35px;
+	margin-right: 5px;
 }
 /* MAIN  */
 .main {
-	background-color: khaki;
+	background-color: #141922;
 	width: 85%;
 	height: calc(100% - 60px);
 }
 /* BUTTON  */
 .button__link {
-	background-color: red;
+	border: 2px solid #fff;
 	padding: 10px 30px;
+	border-radius: 25px;
+	color: #fff;
+	text-decoration: none;
 }
 .button {
-	background-color: rgb(45, 45, 45);
+	background-color: #080B12;
 	width: 83.889999%;
 	position: fixed;
 	line-height: 60px;
@@ -64,7 +109,6 @@ body {
 }
 /* NAV  */
 .nav {
-	background-color: lightpink;
 }
 .nav__list {
 	display: flex;
@@ -90,7 +134,6 @@ body {
 	color: #fff;
 	font-weight: 700;
 	font-size: 25px;
-	background-color: lightseagreen;
 }
 .song-list__row {
 	display: flex;
