@@ -20,18 +20,18 @@
 						<img class="logo__img" src="./img/logo.svg" alt="">
 					</div>
 					<div class="main-nav">
-						<div class="main-nav__item">
+						<a class="main-nav__item" href="">
 							<img class="main-nav__icon" src="./img/home.svg" alt="home">
 							<span class="main-nav__txt">Home</span>
-						</div>
-						<div class="main-nav__item">
+						</a>
+						<a class="main-nav__item" href="">
 							<img class="main-nav__icon" src="./img/search.svg" alt="home">
 							<span class="main-nav__txt">Search</span>
-						</div>
-						<div class="main-nav__item">
+						</a>
+						<a class="main-nav__item" href="">
 							<img class="main-nav__icon" src="./img/libreria.svg" alt="home">
 							<span class="main-nav__txt">La tua Libreria</span>
-						</div>
+						</a>
 					</div>
 					<div class="main-plist">
 						<h2 class="title"> Playlist</h2>
@@ -63,19 +63,22 @@
 				<div class="playlist">
 					<nav class="nav">
 						<ul class="nav__list">
-							<li class="nav__item">In Evidenza</li>
-							<li class="nav__item">Podcast</li>
-							<li class="nav__item">Classifiche</li>
-							<li class="nav__item">Generi e mood</li>
-							<li class="nav__item">Nuove Uscite</li>
-							<li class="nav__item">Scopri</li>
+							<li class="nav__item"> <a href=""> In Evidenza</a></li>
+							<li class="nav__item"> <a href=""> Podcast</a></li>
+							<li class="nav__item"> <a href=""> Classifiche</a></li>
+							<li class="nav__item"> <a href=""> Generi e mood</a></li>
+							<li class="nav__item"> <a href=""> Nuove Uscite</a></li>
+							<li class="nav__item"> <a href=""> Scopri</a></li>
 						</ul>
 					</nav>
 					<section class="first-list">
 						<h2 class="title">Recently Palyed</h2>
 						<ul class="list-row">
 							<li class="list-row__item">
-								<img class="list-row__img" src="./img/metal_lifting.jpg" alt="Heavy Metal">
+								<div class="list-row__wraper">	
+									<img class="list-row__img" src="./img/metal_lifting.jpg" alt="Heavy Metal">
+									<i class="list-row__icon far fa-play-circle"></i>
+								</div>
 								<h3 class="list-row__title small-title">Heavy Metal</h3>
 								<span class="list-row__subtitle subtitle">Subtitle</span>
 							</li>
