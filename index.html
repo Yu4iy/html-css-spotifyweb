@@ -5,159 +5,173 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Spotify Web</title>
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="wraper">
-		<aside class="side-colon">
-				<div class="block-top">
-					<div class="block-top__logo"><img class="" src="./img/logo.svg" alt="logo"></div>
-					<ul class="top-list mt-25">
-						<li class="top-item">
-							<img class="top-item__img" src="./img/home.svg" alt="home">
-							<span class="top-item__txt">Home</span>
-						</li>
-						<li class="top-item">
-							<img class="top-item__img" src="./img/search.svg" alt="home">
-							<span class="top-item__txt">Home</span>
-						</li>
-						<li class="top-item">
-							<img class="top-item__img" src="./img/libreria.svg" alt="home">
-							<span class="top-item__txt">Home</span>
-						</li>
-					</ul>
-				</div>
-				<div class="block-center">
-					<h3 class="block-center__title mt-25 mb-10" >PlayList</h3>
-					<ul class="block-center__list">
-						<li class="block-center__item"><i class="fas fa-plus-square"> </i> <span> Crea PlayList</span></li>
-						<li class="block-center__item"> <span>Nome PlayList</span></li>
-						<li class="block-center__item"> <span>Nome PlayList</span></li>
-						<li class="block-center__item"> <span>Nome PlayList</span></li>
-						<li class="block-center__item"> <span>Nome PlayList</span></li>
-						<li class="block-center__item"> <span>Nome PlayList</span></li>
-						<li class="block-center__item"> <span>Nome PlayList</span></li>
-						<li class="block-center__item"> <span>Nome PlayList</span></li>
-					
-					</ul>
-				</div>
-				<div class="side-colon__bottom">
-					content
-				</div>
-			
-		</aside>
-<!-- MAIN  -->
+	<div class="container">
 		<main class="main">
-			<!-- BUTTON -->
-			<div class="button">
-				<a class="button__link" href="@">Efettua l'upgrade</a>
+			<aside class="home">
+				<div class="home-top">
+					<div class="logo mb-20">
+						<img class="logo__img" src="./img/logo.svg" alt="">
+					</div>
+					<div class="main-nav">
+						<div class="main-nav__item">
+							<img class="main-nav__icon" src="./img/home.svg" alt="home">
+							<span class="main-nav__txt">Home</span>
+						</div>
+						<div class="main-nav__item">
+							<img class="main-nav__icon" src="./img/search.svg" alt="home">
+							<span class="main-nav__txt">Search</span>
+						</div>
+						<div class="main-nav__item">
+							<img class="main-nav__icon" src="./img/libreria.svg" alt="home">
+							<span class="main-nav__txt">La tua Libreria</span>
+						</div>
+					</div>
+					<div class="main-plist">
+						<h2 class="title"> Playlist</h2>
+						<ul class="p-list">
+							<li class="p-list__item"><i class="fas fa-plus-square"> </i> <span> Crea PlayList</span></li>
+							<li class="p-list__item"> <span>Nome PlayList</span></li>
+							<li class="p-list__item"> <span>Nome PlayList</span></li>
+							<li class="p-list__item"> <span>Nome PlayList</span></li>
+							<li class="p-list__item"> <span>Nome PlayList</span></li>
+							<li class="p-list__item"> <span>Nome PlayList</span></li>
+					</div>
+				</div>
+				
+				<div class="home-bottom">
+					<a class="home-bottom__link" href="">
+						<i class="far fa-arrow-alt-circle-down"></i> <span>Instala app</span>
+					</a>
+					<hr class="home-bottom__line">
+					<div class="home-bottom__user">
+						<i class="far fa-user-circle"></i> <span class="lh-25"> Jhone Doe</span>
+					</div>
+				</div>
+			</aside>
+			<div class="main-content">
+				<div class="header">
+						<a class="button-link" href="#">Efettua l'upgrade</a>
+				</div>
+				
+				<div class="playlist">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">In Evidenza</li>
+							<li class="nav__item">Podcast</li>
+							<li class="nav__item">Classifiche</li>
+							<li class="nav__item">Generi e mood</li>
+							<li class="nav__item">Nuove Uscite</li>
+							<li class="nav__item">Scopri</li>
+						</ul>
+					</nav>
+					<section class="first-list">
+						<h2 class="title">Recently Palyed</h2>
+						<ul class="list-row">
+							<li class="list-row__item">
+								<img class="list-row__img" src="./img/metal_lifting.jpg" alt="Heavy Metal">
+								<h3 class="list-row__title small-title">Heavy Metal</h3>
+								<span class="list-row__subtitle subtitle">Subtitle</span>
+							</li>
+							<li class="list-row__item">
+								<img class="list-row__img" src="./img/stranger.jpeg" alt="Heavy Metal">
+								<h3 class="list-row__title small-title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+								<span class="list-row__subtitle subtitle">Subtitle</span>
+							</li>
+							<li class="list-row__item">
+								<img class="list-row__img" src="./img/aquietplace.jpeg" alt="Heavy Metal">
+								<h3 class="list-row__title small-title">A quiete place</h3>
+								<span class="list-row__subtitle subtitle">Subtitle</span>
+							</li>
+							<li class="list-row__item">
+								<img class="list-row__img" src="./img/split.jpeg" alt="Heavy Metal">
+								<h3 class="list-row__title small-title">Split</h3>
+								<span class="list-row__subtitle subtitle">Subtitle</span>
+							</li>
+							<li class="list-row__item">
+								<img class="list-row__img" src="./img/cure.jpeg" alt="Heavy Metal">
+								<h3 class="list-row__title small-title">A cure for wellness</h3>
+								<span class="list-row__subtitle subtitle">Subtitle</span>
+							</li>
+							<li class="list-row__item">
+								<img class="list-row__img" src="./img/sinister.jpeg" alt="Heavy Metal">
+								<h3 class="list-row__title small-title">Sinister</h3>
+								<span class="list-row__subtitle subtitle">Subtitle</span>
+							</li>
+						</ul>	
+					</section>
+					<section class="second-list">
+						<h2 class="title">Creato per Jhon Doe</h2>
+						<span class="subtitle">Piu ascolti, piu acurati saranno i sugirementi</span>
+						<ul class="list-row">
+							<li class="list-row__item">
+								<img class="list-row__img" src="./img/radar.jpeg" alt="Heavy Metal">
+								<h3 class="list-row__title small-title">Release Radar</h3>
+								<span class="list-row__subtitle subtitle">subtitle</span>
+							</li>
+							<li class="list-row__item">
+								<img class="list-row__img" src="./img/mixdaily.jpeg" alt="Heavy Metal">
+								<h3 class="list-row__title small-title">Daly Mix 1</h3>
+								<span class="list-row__subtitle subtitle">Subtitle</span>
+							</li>
+						</ul>	
+					</section>
+					<section class="third-list">
+						<h2 class="title">Artisti più popolari</h2>
+						<span class="subtitle">Piu ascolti, piu acurati saranno i sugirementi</span>
+						<ul class="list-row">
+							<li class="list-row__item">
+								<img class="list-row__img br-100" src="./img/youg.jpeg" alt="Heavy Metal">
+								<h3 class="list-row__title small-title">Lana del Rey</h3>
+							</li>
+							<li class="list-row__item pb-100">
+								<img class="list-row__img br-100" src="./img/einaudi.jpeg" alt="Heavy Metal">
+								<h3 class="list-row__title small-title">Ludovico Einaudi</h3>
+							</li>
+						</ul>	
+					</section>
+				</div>
 			</div>
-			<!-- NAV -->
-			<div class="wrap pt-80 ">
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item">In Evidenza</li>
-						<li class="nav__item">Podcast</li>
-						<li class="nav__item">Classifiche</li>
-						<li class="nav__item">Generi e mood</li>
-						<li class="nav__item">Nuove Uscite</li>
-						<li class="nav__item">Scopri</li>
-					</ul>
-				</nav>
-				<!-- SONGS  -->
-				<div class="song-list">
-					<h2 class="song-list__title title px-20">Recently played</h2>
-					<ul class="song-list__row">
-						<li class="song-item">
-							<div class="song-item__wraper ">
-								<img class="song-item__img" src="./img/metal_lifting.jpg" alt="Heavy Metal">
-							</div>
-							<h3 class="song-item__title small-title">Heavy Metal</h3>
-							<span class="song-item__subtitle subtitle">Subtitle</span>
-						</li>
-						<li class="song-item">
-							<div class="song-item__wraper">
-								<img class="song-item__img" src="./img/stranger.jpeg" alt="Heavy Metal">
-							</div>
-							<h3 class="song-item__title small-title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
-							<span class="song-item__subtitle subtitle">Subtitle</span>
-						</li>
-						<li class="song-item">
-							<div class="song-item__wraper">
-								<img class="song-item__img" src="./img/aquietplace.jpeg" alt="Heavy Metal">
-							</div>
-							<h3 class="song-item__title small-title">A quiete place</h3>
-							<span class="song-item__subtitle subtitle">Subtitle</span>
-						</li>
-						<li class="song-item">
-							<div class="song-item__wraper">
-								<img class="song-item__img" src="./img/split.jpeg" alt="Heavy Metal">
-							</div>
-							<h3 class="song-item__title small-title">Split</h3>
-							<span class="song-item__subtitle subtitle">Subtitle</span>
-						</li>
-						<li class="song-item">
-							<div class="song-item__wraper">
-								<img class="song-item__img" src="./img/cure.jpeg" alt="Heavy Metal">
-							</div>
-							<h3 class="song-item__title small-title">A cure for wellness</h3>
-							<span class="song-item__subtitle subtitle">Subtitle</span>
-						</li>
-						<li class="song-item">
-							<div class="song-item__wraper">
-								<img class="song-item__img" src="./img/sinister.jpeg" alt="Heavy Metal">
-							</div>
-							<h3 class="song-item__title small-title">Sinister</h3>
-							<span class="song-item__subtitle subtitle">Subtitle</span>
-						</li>
-					</ul>
-					<h2 class="song-list__title title px-20">Creato per Jhon Doe</h2>
-					<span class="subtitle px-20">Piu ascolti, piu acurati saranno i sugirementi</span>
-					<ul class="song-list__row">
-						<li class="song-item">
-							<div class="song-item__wraper">
-								<img class="song-item__img" src="./img/radar.jpeg" alt="Heavy Metal">
-							</div>
-							<h3 class="song-item__title small-title">Heavy Metal</h3>
-							<span class="song-item__subtitle subtitle">Subtitle</span>
-						</li>
-						<li class="song-item">
-							<div class="song-item__wraper">
-								<img class="song-item__img" src="./img/mixdaily.jpeg" alt="Heavy Metal">
-							</div>
-							<h3 class="song-item__title small-title">Heavy Metal</h3>
-							<span class="song-item__subtitle subtitle">Subtitle</span>
-						</li>
-					</ul>	
-					<h2 class="song-list__title title px-20">Creato per Jhon Doe</h2>
-					<span class="subtitle px-20">Piu ascolti, piu acurati saranno i sugirementi</span>
-					<ul class="song-list__row">
-						<li class="song-item">
-							<div class="song-item__wraper">
-								<img class="song-item__img" src="./img/youg.jpeg" alt="Heavy Metal">
-							</div>
-							<h3 class="song-item__title small-title">Heavy Metal</h3>
-							<span class="song-item__subtitle subtitle">Subtitle</span>
-						</li>
-						<li class="song-item">
-							<div class="song-item__wraper">
-								<img class="song-item__img" src="./img/einaudi.jpeg" alt="Heavy Metal">
-							</div>
-							<h3 class="song-item__title small-title">Heavy Metal</h3>
-							<span class="song-item__subtitle subtitle">Subtitle</span>
-						</li>
-					</ul>	
-			</div>
-		</div>
+			<!-- FOOTER -->
+			<footer class="footer">
+				<div class="curent-song">
+					<img class="curent-song__img" src="./img/sinister.jpeg" alt="">
+					<div class="curent-song__txt">
+						<h4 class="curent-song__title">Sinister</h4>
+						<span class="curent-song__subtitle">Brano Nome</span>
+						<i class="far fa-heart"></i>
+						<i class="far fa-folder"></i>
+					</div>
+				</div>
+				<div class="play-bar">
+					<div class="play-bar__top">
+						<i class="fas fa-random"></i>
+						<i class="fas fa-step-backward"></i>
+						<i class="far fa-play-circle"></i>
+						<i class="fas fa-step-forward"></i>
+						<i class="fas fa-redo"></i>
+					</div>
+					<div class="play-bar__bottom">
+						<div class="play-bar__time">0:25</div>
+						<div class="play-bar__line"></div>
+						<div class="play-bar__time">4:35</div>
+					</div>
+				</div>
+				<div class="setings">
+					<i class="fas fa-bars"></i>
+					<i class="fas fa-desktop"></i>
+					<i class="fas fa-volume-up"></i>
+					<div class="setings__line"></div>
+				</div>
+			</footer>
 		</main>
 		
-		<footer class="player">
-			content
-		</footer>
 	</div>
 </body>
 </html>

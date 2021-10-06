@@ -25,15 +25,20 @@ body {
 .main {
 	display: flex;
 }
-.home-top {
-	flex-grow: 1;
-}
+
 .home {
 	position: fixed;
 	min-width: 230px;
 	flex-grow: 1;
 	height: calc(100% - 60px);
 }
+.home-top {
+	flex-grow: 1;
+}
+.logo {
+	width: 100px;
+}
+
 .main-content {
 	width: 100%;
 	height: calc(100% - 60px);
@@ -44,6 +49,7 @@ body {
 	background-color: #282828;
 	width: 100%;
 	bottom: 0;
+	padding: 0 10px;
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
@@ -149,13 +155,10 @@ body {
 	position: absolute;;
 }
 
-
-
-
 .playlist {
 	background-color: #141922;
 	overflow:auto;
-	height: calc(100% - 70px); 
+	padding: 0 10px;
 	/* ? */
 	}
 
@@ -225,11 +228,14 @@ body {
 .br-100 {
 	border-radius: 100%;
 }
-.pb-60 {
-	padding-bottom: 60px;
+.pb-100 {
+	padding-bottom: 100px; 
 }
 .lh-25 {
 	line-height: 25px;
+}
+.mb-20 {
+	margin-bottom: 20px;
 }
 
 .home {
