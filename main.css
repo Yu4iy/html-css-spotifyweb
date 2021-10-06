@@ -49,9 +49,33 @@ body {
 	justify-content: space-between;
 }
 .curent-song {
-	background-color: brown;
-	
+	width: 25%;
+	min-width: 230px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+.curent-song__img {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+.curent-song__title {
+	font-weight: 700;
+	line-height: 14px;
+	color: #fff;
+
+}
+.curent-song__subtitle {
+	line-height: 14px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.curent-song__txt i {
+	padding: 0 5px;
+}
+
 .play-bar {
 	display: flex;
 	flex-direction: column;
@@ -99,6 +123,7 @@ body {
 .setings {
 	display: flex;
 	width: 25%;
+	min-width: 230px;
 	align-items: center;
 	color: #fff;
 	font-size: 10px;
