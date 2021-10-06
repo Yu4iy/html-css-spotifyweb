@@ -39,13 +39,65 @@ body {
 	height: calc(100% - 60px);
 	margin: 0 0 0 230px;
 }
+/* FOOTER */
 .footer {
-	background-color: pink;
-	height:  60px;
+	background-color: #282828;
 	width: 100%;
 	bottom: 0;
 	position: fixed;
+	display: flex;
+	justify-content: space-between;
 }
+.curent-song {
+	background-color: brown;
+}
+.play-bar {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.play-bar__top {
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+}
+.play-bar__bottom {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 20px;
+
+}
+
+.play-bar__line {
+	width: 50%;
+	height: 4px;
+	border-radius: 5px;
+	background-color: #5A5A5A;
+	position: relative;
+}
+.play-bar__line::before {
+	content:"";
+	width: 25%;
+	height: 4px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	position: absolute;
+
+}
+.play-bar__time {
+	color: #fff;
+	font-weight: 600;
+	font-size: 8px;
+	margin: 0 25px;
+}
+.setings {
+	background-color: chartreuse;
+}
+
+
 
 .playlist {
 	background-color: #141922;
@@ -135,9 +187,7 @@ body {
 }
 .home-top {
 }
-.home-midle {
-	background-color: royalblue;
-}
+
 .home-bottom {
 	background-color: rgb(0, 0, 0);
 }
