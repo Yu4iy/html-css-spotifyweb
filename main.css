@@ -1,0 +1,149 @@
+/* GEN */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+ul,ol,li {
+list-style: none;
+}
+
+body {
+	color: #76797D;
+	
+}
+.container {
+	height: 100vh;
+	background-color: rgb(17, 110, 9);
+}
+.main {
+	display: flex;
+}
+.home {
+	background-color: red;
+	position: fixed;
+	min-width: 230px;
+	flex-grow: 1;
+	height: calc(100% - 60px);
+}
+.main-content {
+	width: 100%;
+	height: calc(100% - 60px);
+	margin: 0 0 0 230px;
+}
+.footer {
+	background-color: pink;
+	height:  60px;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+}
+
+.playlist {
+	background-color: cadetblue;
+	overflow:auto;
+	height: calc(100% - 7000px);
+}
+
+/* BUTTON  */
+.button-link {
+	border: 2px solid #fff;
+	padding: 10px 30px;
+	border-radius: 25px;
+	color: #fff;
+	text-decoration: none;
+}
+.header {
+	background-color: blueviolet;position: fixed;
+	width: calc(100% - 230px);
+	padding: 20px;
+	display: flex;
+	justify-content: end;
+}
+/* NAV  */
+
+.nav__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top:80px;
+}
+.nav__item {
+	text-transform: uppercase;
+	line-height: 65px;
+
+}
+.nav__item:not(:last-child) {
+	margin-right: 20px;
+}
+.title {
+	line-height: 60px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 25px;
+	background-color: chartreuse;
+}
+
+.small-title {
+	color: #fff;
+	font-weight: 700;
+}
+.subtitle {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+}
+.list-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.list-row__img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.list-row__item {
+	width: calc(100% / 6);
+	padding: 5px;
+	text-align: center;
+}
+/* UT  */
+.br-100 {
+	border-radius: 100%;
+}
+.pb-60 {
+	padding-bottom: 60px;
+}
+
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.home-top {
+	background-color: chartreuse;
+}
+.home-midle {
+	background-color: royalblue;
+}
+.home-bottom {
+	background-color: seagreen;
+}
+
+.main-nav__item {
+	display: flex;
+	justify-items: center;
+}
+.main-nav__icon {
+	width: 25px;
+	
+}
+.main-nav__txt {
+line-height: 40px;
+}
