@@ -50,6 +50,7 @@ body {
 }
 .curent-song {
 	background-color: brown;
+	
 }
 .play-bar {
 	display: flex;
@@ -78,6 +79,7 @@ body {
 	background-color: #5A5A5A;
 	position: relative;
 }
+
 .play-bar__line::before {
 	content:"";
 	width: 25%;
@@ -85,17 +87,43 @@ body {
 	border-radius: 5px;
 	background-color: #ffffff;
 	position: absolute;
-
 }
 .play-bar__time {
 	color: #fff;
 	font-weight: 600;
 	font-size: 8px;
-	margin: 0 25px;
+	margin: 0 20px;
 }
+
+
 .setings {
-	background-color: chartreuse;
+	display: flex;
+	width: 25%;
+	align-items: center;
+	color: #fff;
+	font-size: 10px;
+	justify-content: flex-end;
 }
+.setings *:not(:last-child){	
+	margin-right: 20px;
+	
+}
+.setings__line {
+	width: 35%;
+	height: 4px;
+	border-radius: 5px;
+	background-color: #5A5A5A;
+	position: relative;
+}
+.setings__line::before {
+	content:"";
+	width: 50%;
+	height: 4px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	position: absolute;;
+}
+
 
 
 
