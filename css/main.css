@@ -93,6 +93,9 @@ body {
 	text-align: center;
 	font-size: 20px;
 }
+.play-bar__top i:not(:last-child) {
+	margin-right: 20px;
+}
 .play-bar__bottom {
 	display: flex;
 	align-items: center;
